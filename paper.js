@@ -18,22 +18,16 @@ class Paper{
 		World.add(world, this.body);
 
 	}
-	display(){
-		imageMode(CENTER)
-
-		var paperpos = this.body.position
-
-		image(this.image,paper.position.x,paper.position.y,radius);
-
+	display() { 
+		var paperpos=this.body.position; 
 		push() 
-		translate(paperpos.x, paperpos.y); 
-		rectMode(CENTER) 
-		strokeWeight(3); 
-		fill(255,0,255) 
-		ellipse(0,0,this.r, this.r); 
-		pop()
+		translate(paperpos.x, paperpos.y);
+		 rectMode(CENTER) 
+		 //strokeWeight(4); 
+		 fill(255,0,255) 
+		 imageMode(CENTER); 
+		 image(this.image, 0,0,this.r, this.r) 
+		 //ellipse(0,0,this.r, this.r);
+		  pop() 
+		}
 	}
-	
-
-}
-
